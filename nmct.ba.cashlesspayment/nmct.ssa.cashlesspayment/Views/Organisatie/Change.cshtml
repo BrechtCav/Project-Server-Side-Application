@@ -1,15 +1,15 @@
-﻿@model nmct.ssa.cashlesspayment.Models.Organisatie
-@{
-    ViewBag.Title = "NewOrganisation";
-}
+﻿@model nmct.ssa.cashlesspayment.PresentationModel.PMChangedOrganisation
 
+@{
+    ViewBag.Title = "Change";
+}
 <h2>Organisatie</h2>
-<h3>Voeg hier een nieuwe organisatie toe.</h3>
+<h3>Wijzig Organisatie.</h3>
 <br />
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     @Html.LabelFor(model => model.Login)    <br />
     @Html.EditorFor(model => model.Login)    <br />
     @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })   <br />
@@ -17,19 +17,7 @@
     @Html.LabelFor(model => model.Password)    <br />
     @Html.EditorFor(model => model.Password)    <br />
     @Html.ValidationMessageFor(model => model.Password)    <br />
-
-    @Html.LabelFor(model => model.DbName)    <br />
-    @Html.EditorFor(model => model.DbName)    <br />
-    @Html.ValidationMessageFor(model => model.DbName)    <br />
-
-    @Html.LabelFor(model => model.DbLogin)    <br />
-    @Html.EditorFor(model => model.DbLogin)    <br />
-    @Html.ValidationMessageFor(model => model.DbLogin)    <br />
     
-    @Html.LabelFor(model => model.DbPassword)    <br />
-    @Html.EditorFor(model => model.DbPassword)    <br />
-    @Html.ValidationMessageFor(model => model.DbPassword)    <br />
-
     @Html.LabelFor(model => model.OrganisationName)    <br />
     @Html.EditorFor(model => model.OrganisationName)    <br />
     @Html.ValidationMessageFor(model => model.OrganisationName)    <br />
@@ -41,7 +29,7 @@
     @Html.LabelFor(model => model.Email)    <br />
     @Html.EditorFor(model => model.Email)    <br />
     @Html.ValidationMessageFor(model => model.Email)    <br />
-    
+
     @Html.LabelFor(model => model.Phone)    <br />
     @Html.EditorFor(model => model.Phone)    <br />
     @Html.ValidationMessageFor(model => model.Phone)    <br />

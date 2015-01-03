@@ -1,0 +1,10 @@
+﻿@model IEnumerable<nmct.ssa.cashlesspayment.Models.Organisatie>
+<h1>Organisaties &emsp;  <a href="/Organisatie/NewOrganisation"><img src="~/Images/Add.png" alt="Voeg nieuwe organisatie toe" height="30" /> </a> </h1>
+<div style="margin-top:30px;">
+    <ul>
+        @foreach (nmct.ssa.cashlesspayment.Models.Organisatie org in Model)
+        {
+            <li style="height:30px;">@Html.ActionLink(org.OrganisationName, "Details", new { Id = org.ID })<a href="~/Organisatie/Change?id=@org.ID"><img src="~/Images/Edit.png" alt="Edit Organisation" style="margin:5px; height:20px;" /></a></li>
+        }
+    </ul>
+</div>

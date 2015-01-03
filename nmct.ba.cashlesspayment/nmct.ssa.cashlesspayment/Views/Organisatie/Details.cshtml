@@ -1,0 +1,45 @@
+﻿@model nmct.ssa.cashlesspayment.Models.Organisatie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<h3>@Model.OrganisationName<a href="/Organisation/Change?id=@Model.ID"><img src="~/Images/Edit.png" alt="Edit Organisation" style="margin:5px; height:20px;" /></a></h3>
+<br />
+<table>
+    <tr>
+        <td width="200px"><b>@Html.LabelFor(model => model.Email)</b></td>
+        <td width="400px">@Html.DisplayFor(model => model.Email)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.Address)</b></td>
+        <td>@Html.DisplayFor(model => model.Address)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.Phone)</b></td>
+        <td>@Html.DisplayFor(model => model.Phone)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.Login)</b></td>
+        <td>@Html.DisplayFor(model => model.Login)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.Password)</b></td>
+        <td>@Html.DisplayFor(model => model.Password)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.DbName)</b></td>
+        <td>@Html.DisplayFor(model => model.DbName)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.DbLogin)</b></td>
+        <td>@Html.DisplayFor(model => model.DbLogin)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.DbPassword)</b></td>
+        <td>@Html.DisplayFor(model => model.DbPassword)</td>
+    </tr>
+</table>
+<a href="~/Organisatie/Index">Terug naar overzicht</a>

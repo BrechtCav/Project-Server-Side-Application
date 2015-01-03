@@ -112,3 +112,6 @@ C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debu
 C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.csproj.GenerateResource.Cache
 C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.dll
 C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.pdb
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ba.cashlessproject.model.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ba.cashlessproject.model.pdb
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.Migrations.DataAnnotations.resources

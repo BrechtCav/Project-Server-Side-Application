@@ -171,13 +171,18 @@
     <Compile Include="Migrations\201412111855444_InitDatabase.Designer.cs">
       <DependentUpon>201412111855444_InitDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201501031611156_DataAnnotations.cs" />
+    <Compile Include="Migrations\201501031611156_DataAnnotations.Designer.cs">
+      <DependentUpon>201501031611156_DataAnnotations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\RoleManager.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Organisatie.cs" />
-    <Compile Include="PresentationModel\PMOrganisatie.cs" />
+    <Compile Include="Models\OrganisatieDA.cs" />
+    <Compile Include="PresentationModel\PMChangedOrganisation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -195,6 +200,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Add.png" />
+    <Content Include="Images\Edit.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\Settings.settings">
@@ -251,6 +258,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Organisatie\NewOrganisation.cshtml" />
+    <Content Include="Views\Organisatie\Index.cshtml" />
+    <Content Include="Views\Organisatie\Details.cshtml" />
+    <Content Include="Views\Organisatie\ErrorNoOrganisation.cshtml" />
+    <Content Include="Views\Organisatie\Change.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -266,6 +277,15 @@
     <EmbeddedResource Include="Migrations\201412111855444_InitDatabase.resx">
       <DependentUpon>201412111855444_InitDatabase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501031611156_DataAnnotations.resx">
+      <DependentUpon>201501031611156_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nmct.ba.cashlessproject.model\nmct.ba.cashlessproject.model.csproj">
+      <Project>{bf36b47c-70fc-440a-b52b-f556c01a522a}</Project>
+      <Name>nmct.ba.cashlessproject.model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
