@@ -1,0 +1,114 @@
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ssa.cashlesspayment.dll.config
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ssa.cashlesspayment.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ssa.cashlesspayment.pdb
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Antlr3.Runtime.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.SqlServer.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Core.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Cookies.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Facebook.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Google.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.OAuth.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Twitter.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Web.Infrastructure.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Newtonsoft.Json.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Owin.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Helpers.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Mvc.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Optimization.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Razor.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Deployment.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Razor.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\WebGrease.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Helpers.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Mvc.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Optimization.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Razor.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Deployment.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Razor.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Antlr3.Runtime.pdb
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Newtonsoft.Json.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.SqlServer.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Core.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Facebook.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Cookies.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.OAuth.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Google.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Twitter.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.dll
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.pdb
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.Migrations.InitDatabase.resources
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.csproj.GenerateResource.Cache
+C:\School\Server Side Advanced\Project\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.csprojResolveAssemblyReference.cache
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ssa.cashlesspayment.dll.config
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ssa.cashlesspayment.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\nmct.ssa.cashlesspayment.pdb
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Antlr3.Runtime.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.SqlServer.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Google.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Newtonsoft.Json.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Owin.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Helpers.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Mvc.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Optimization.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Razor.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Deployment.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Razor.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\WebGrease.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Helpers.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Mvc.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Optimization.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.Razor.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Deployment.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\System.Web.WebPages.Razor.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Antlr3.Runtime.pdb
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Newtonsoft.Json.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\EntityFramework.SqlServer.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Google.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.csprojResolveAssemblyReference.cache
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.Migrations.InitDatabase.resources
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.csproj.GenerateResource.Cache
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.dll
+C:\Project\Project-SSA\nmct.ba.cashlesspayment\nmct.ssa.cashlesspayment\obj\Debug\nmct.ssa.cashlesspayment.pdb
