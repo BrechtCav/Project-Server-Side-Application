@@ -56,21 +56,81 @@ namespace nmct.ssa.cashlesspayment.Controllers
             nieuwekassa.ExpiresDate = newkassa.ExpiresDate; 
             List<Kassa> reglist = new List<Kassa>();
             reglist = KassaDA.GetRegisters();
+            int test = 0;
             foreach(Kassa reg in reglist)
             {
-                if(!reg.RegisterName.Equals(nieuwekassa.RegisterName))
+                if(reg.RegisterName.Equals(nieuwekassa.RegisterName))
                 {
-
-                    KassaDA.InsertRegister(nieuwekassa);
-                    return RedirectToAction("Index");
-                }
-                else
-                {
-                    ViewBag.Error = "Deze naam bestaat al";
-                    return View(newkassa);
+                    test = 1;
                 }
             }
-            return RedirectToAction("Index");
+            if(test == 0)
+            {
+                KassaDA.InsertRegister(nieuwekassa);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Error = "Deze naam bestaat al";
+                return View(newkassa);
+            }
+        }
+        [HttpGet]
+        public ActionResult Change(int? Id)
+        {
+            ViewBag.Error = "";
+            if (!Id.HasValue)
+            {
+                return RedirectToAction("Index");
+            }
+            Kassa reg = new Kassa();
+            reg = KassaDA.GetKassaByID(Id.Value);
+            if (reg != null)
+            {
+                return View(reg);
+            }
+            else
+            {
+                return RedirectToAction("ErrorNoOrganisation");
+            }
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Change(Kassa changedreg)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(changedreg);
+            }
+            Kassa reg = new Kassa();
+            reg.ID = changedreg.ID;
+            reg.RegisterName = Regex.Replace(changedreg.RegisterName, "/[^a-zA-Z0-9 ]/", " ");
+            reg.Device = Regex.Replace(changedreg.Device, "/[^a-zA-Z0-9 ]/", " ");
+            reg.PurchaseDate = changedreg.PurchaseDate;
+            reg.ExpiresDate = changedreg.ExpiresDate;
+            List<Kassa> kassalist = new List<Kassa>();
+            kassalist = KassaDA.GetRegisters();
+            int test = 0;
+            foreach (Kassa register in kassalist)
+            {
+                if(!register.ID.Equals(reg.ID))
+                {
+                    if (register.RegisterName.Equals(reg.RegisterName))
+                    {
+                        test = 1;
+                    }
+                }
+            }
+            if(test == 0)
+            {
+                KassaDA.ChangeRegister(reg);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Error = "Deze naam bestaat al";
+                return View(changedreg);
+            }
         }
     }
 }

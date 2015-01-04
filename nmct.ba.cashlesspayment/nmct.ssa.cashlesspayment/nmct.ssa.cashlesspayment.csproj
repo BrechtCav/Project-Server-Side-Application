@@ -268,6 +268,7 @@
     <Content Include="Views\Kassa\Details.cshtml" />
     <Content Include="Views\Kassa\NewKassa.cshtml" />
     <Content Include="Views\Shared\DateTime.cshtml" />
+    <Content Include="Views\Kassa\Change.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

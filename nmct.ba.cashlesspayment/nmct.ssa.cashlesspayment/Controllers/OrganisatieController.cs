@@ -74,33 +74,40 @@ namespace nmct.ssa.cashlesspayment.Controllers
             }
             PMChangedOrganisation changed = new PMChangedOrganisation();
             changed.ID = changedorg.ID;
-            changed.Login = Regex.Replace(changedorg.Login, "/[^a-zA-Z0-9 ]/", "");
-            changed.Password = Regex.Replace(changedorg.Password, "/[^a-zA-Z0-9 ]/", "");
-            changed.OrganisationName = changedorg.OrganisationName;
-            changed.Address = Regex.Replace(changedorg.Address, "/[^a-zA-Z0-9 ]/", "");
-            changed.Email = Regex.Replace(changedorg.Email, "/[[A-Z0-9a-z.!#$%&'*+-/=?^_`{|}~]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}]/", "");
-            changed.Phone = Regex.Replace(changedorg.Phone, "/[^a-zA-Z0-9 ]/", ""); List<Organisatie> Organisaties = new List<Organisatie>();
+            changed.Login = Regex.Replace(changedorg.Login, "/[^a-zA-Z0-9 ]/", " ");
+            changed.Password = Regex.Replace(changedorg.Password, "/[^a-zA-Z0-9 ]/", " ");
+            changed.OrganisationName = Regex.Replace(changedorg.OrganisationName, "/[^a-zA-Z0-9 ]/", " ");
+            changed.Address = Regex.Replace(changedorg.Address, "/[^a-zA-Z0-9 ]/", " ");
+            changed.Email = Regex.Replace(changedorg.Email, "/[[A-Z0-9a-z.!#$%&'*+-/=?^_`{|}~]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}]/", " ");
+            changed.Phone = Regex.Replace(changedorg.Phone, "/[^a-zA-Z0-9 ]/", " "); 
+            List<Organisatie> Organisaties = new List<Organisatie>();
             Organisaties = OrganisatieDA.GetOrganisations();
+            int test = 0;
             foreach (Organisatie org in Organisaties)
             {
-                if (!org.OrganisationName.Equals(changed.OrganisationName))
+                if (org.OrganisationName.Equals(changed.OrganisationName))
                 {
-                    if (!org.Login.Equals(changed.Login))
-                    {
-                        OrganisatieDA.ChangeOrganisation(changed);
-                        return RedirectToAction("Index");
-                    }
-                    else
-                    {
-                        ViewBag.Error = "Deze login bestaat al";
-                        return View(changedorg);
-                    }
+                    test = 2;
                 }
-                else
+                if (org.Login.Equals(changed.Login))
                 {
-                    ViewBag.Error = "Deze Organisatienaam bestaat al";
-                    return View(changedorg);
+                    test = 1;
                 }
+            }
+            if(test == 0)
+            {
+                OrganisatieDA.ChangeOrganisation(changed);
+                return RedirectToAction("Index");
+            }
+            else if(test == 1)
+            {
+                ViewBag.Error = "Deze login bestaat al";
+                return View(changedorg);
+            }
+            else if (test == 2)
+            {
+                ViewBag.Error = "Deze Organisatienaam bestaat al";
+                return View(changedorg);
             }
             return RedirectToAction("Index");
             
@@ -135,42 +142,50 @@ namespace nmct.ssa.cashlesspayment.Controllers
             NieuweOrganisatie.Phone = Regex.Replace(neworg.Phone, "/[^a-zA-Z0-9 ]/", "");
             List<Organisatie> Organisaties = new List<Organisatie>();
             Organisaties = OrganisatieDA.GetOrganisations();
+            int test = 0;
             foreach(Organisatie org in Organisaties)
             {
-                if(!org.OrganisationName.Equals(NieuweOrganisatie.OrganisationName))
+                if (org.OrganisationName.Equals(NieuweOrganisatie.OrganisationName))
                 {
-                    if(!org.Login.Equals(NieuweOrganisatie.Login))
-                    {
-                        if(!org.DbName.Equals(NieuweOrganisatie.DbName))
-                        {
-                            if(!org.DbLogin.Equals(NieuweOrganisatie.DbLogin))
-                            {
-                                OrganisatieDA.InsertOrganisation(NieuweOrganisatie);
-                                return RedirectToAction("Index");
-                            }
-                            else
-                            {
-                                ViewBag.Error = "Deze database login bestaat al";
-                                return View(neworg);
-                            }
-                        }
-                        else
-                        {
-                            ViewBag.Error = "Deze database naam bestaat al";
-                            return View(neworg);
-                        }
-                    }
-                    else
-                    {
-                        ViewBag.Error = "Deze login bestaat al";
-                        return View(neworg);
-                    }
+                    test = 4;
                 }
-                else
+                if (org.Login.Equals(NieuweOrganisatie.Login))
                 {
-                    ViewBag.Error = "Deze organisatie bestaat al";
-                    return View(neworg);
+                    test = 3;
                 }
+                if (org.DbName.Equals(NieuweOrganisatie.DbName))
+                {
+                    test = 2;
+                }
+                if (org.DbLogin.Equals(NieuweOrganisatie.DbLogin))
+                {
+                    test = 1;
+                }
+            }
+            if(test == 0)
+            {
+                OrganisatieDA.InsertOrganisation(NieuweOrganisatie);
+                return RedirectToAction("Index");
+            }
+            else if(test == 1)
+            {
+                ViewBag.Error = "Deze database login bestaat al";
+                return View(neworg);
+            }
+            else if (test == 2)
+            {
+                ViewBag.Error = "Deze database naam bestaat al";
+                return View(neworg);
+            }
+            else if (test == 3)
+            {
+                ViewBag.Error = "Deze login bestaat al";
+                return View(neworg);
+            }
+            else if (test == 4)
+            {
+                ViewBag.Error = "Deze organisatie bestaat al";
+                return View(neworg);
             }
             return RedirectToAction("Index");
             

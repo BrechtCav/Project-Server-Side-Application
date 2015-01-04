@@ -69,6 +69,18 @@ namespace nmct.ssa.cashlesspayment.Models
 
             return id;
         }
+        public static int ChangeRegister(Kassa changereg)
+        {
+            string sql = "UPDATE Registers SET RegisterName = @RegisterName, Device = @Device, PurchaseDate = @PurchaseDate, ExpiresDate = @ExpiresDate WHERE ID = @ID";
+            DbParameter par1 = Database.AddParameter("DefaultConnection", "@RegisterName", changereg.RegisterName);
+            DbParameter par2 = Database.AddParameter("DefaultConnection", "@Device", changereg.Device);
+            DbParameter par3 = Database.AddParameter("DefaultConnection", "@PurchaseDate", changereg.PurchaseDate);
+            DbParameter par4 = Database.AddParameter("DefaultConnection", "@ExpiresDate", changereg.ExpiresDate);
+            DbParameter par5 = Database.AddParameter("DefaultConnection", "@ID", changereg.ID);
+            int id = Database.InsertData(Database.GetConnection("DefaultConnection"), sql, par1, par2, par3, par4, par5);
+            return id;
+
+        }
         public static Kassa GetKassaByID(int id)
         {
             string sql = "SELECT * FROM Registers WHERE ID=@ID";

@@ -1,11 +1,11 @@
 ﻿@model nmct.ssa.cashlesspayment.Models.Kassa
 
 @{
-    ViewBag.Title = "NewOrganisation";
+    ViewBag.Title = "Wijzig kassa";
 }
 <h2 style="color:red;">@ViewBag.Error</h2>
 <h2>Kassa</h2>
-<h3>Voeg hier een nieuwe kassa toe.</h3>
+<h3>Wijzig hier een kassa.</h3>
 <br />
 @using (Html.BeginForm())
 {
@@ -18,7 +18,7 @@
     @Html.LabelFor(model => model.Device)    <br />
     @Html.EditorFor(model => model.Device)    <br />
     @Html.ValidationMessageFor(model => model.Device, "", new { @class = "text-danger" }) <br />
-    
+
     @Html.LabelFor(model => model.PurchaseDate)    <br />
     @Html.EditorFor(model => model.PurchaseDate)    <br />
     @Html.ValidationMessageFor(model => model.PurchaseDate)    <br />
