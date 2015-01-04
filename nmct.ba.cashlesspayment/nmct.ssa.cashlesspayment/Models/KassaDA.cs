@@ -58,6 +58,26 @@ namespace nmct.ssa.cashlesspayment.Models
                 return null;
             }
         }
+        public static int AddRegisterToDatabase(Organisate_Kassa orgreg)
+        {
+            string sql = "INSERT INTO Register VALUES(@RegisterName, @Device)";
+            DbParameter par1 = Database.AddParameter("ConnectionString", "@RegisterName", orgreg.RegisterID.RegisterName);
+            DbParameter par2 = Database.AddParameter("ConnectionString", "@Device", orgreg.RegisterID.Device);
+            int id = Database.InsertData(Database.GetConnection(Database.CreateConnectionString("System.Data.SqlClient", @"BRECHT", orgreg.OrganisationID.DbName, orgreg.OrganisationID.DbLogin, orgreg.OrganisationID.DbPassword)), sql, par1, par2);
+
+            return id;
+        }
+        public static int AddRegisterToTable(Organisate_Kassa orgreg)
+        {
+            string sql = "INSERT INTO Organisation_Register VALUES(@OrganisationID,@RegisterID,@FromDate,@UntilDate)";
+            DbParameter par1 = Database.AddParameter("DefaultConnection", "@OrganisationID", orgreg.OrganisationID.ID);
+            DbParameter par2 = Database.AddParameter("DefaultConnection", "@RegisterID", orgreg.RegisterID.ID);
+            DbParameter par3 = Database.AddParameter("DefaultConnection", "@FromDate", orgreg.FromDate);
+            DbParameter par4 = Database.AddParameter("DefaultConnection", "@UntilDate", orgreg.UntilDate);
+            int id = Database.InsertData(Database.GetConnection("DefaultConnection"), sql, par1, par2, par3, par4);
+
+            return id;
+        }
         public static int InsertRegister(Kassa newkassa)
         {
             string sql = "INSERT INTO Registers VALUES(@RegisterName,@Device,@PurchaseDate,@ExpiresDate)";

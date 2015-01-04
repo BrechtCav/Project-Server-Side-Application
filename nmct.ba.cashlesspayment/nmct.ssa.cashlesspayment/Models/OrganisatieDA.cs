@@ -69,6 +69,56 @@ namespace nmct.ssa.cashlesspayment.Models
                 return null;
             }
         }
+        public static List<Errorlog> GetLogs()
+        {
+            string sql = "SELECT * FROM Errorlog";
+            List<Errorlog> resultaat = new List<Errorlog>();
+            try
+            {
+                DbDataReader reader = Database.GetData(Database.GetConnection("DefaultConnection"), sql);
+                while (reader.Read())
+                {
+                    resultaat.Add(new Errorlog()
+                    {
+                        RegisterID = KassaDA.GetKassaByID(Convert.ToInt32(reader["RegisterID"])),
+                        TimeStamp = Convert.ToDateTime(reader["Timestamp"]),
+                        Message = reader["Message"].ToString(),
+                        Stacktrace = reader["Stacktrace"].ToString(),
+                        Organisatie = OrganisatieDA.GetOrganisationByid(Convert.ToInt32(reader["OrganisationID"]))
+                    });
+                }
+                return resultaat;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        public static List<Errorlog> GetLogsByOrg(int Id)
+        {
+            string sql = "SELECT * FROM Errorlog Where OrganisationID = @ID";
+            DbParameter par1 = Database.AddParameter("DefaultConnection", "@ID", Id);
+            List<Errorlog> resultaat = new List<Errorlog>();
+            try
+            {
+                DbDataReader reader = Database.GetData(Database.GetConnection("DefaultConnection"), sql, par1);
+                while(reader.Read())
+                {
+                    resultaat.Add(new Errorlog()
+                    {
+                        RegisterID = KassaDA.GetKassaByID(Convert.ToInt32(reader["RegisterID"])),
+                        TimeStamp = Convert.ToDateTime(reader["Timestamp"]),
+                        Message = reader["Message"].ToString(),
+                        Stacktrace = reader["Stacktrace"].ToString(),
+                    });
+                }
+                return resultaat;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
         public static List<Organisatie> GetOrganisations()
         {
             string sql = "SELECT * FROM Organisations";

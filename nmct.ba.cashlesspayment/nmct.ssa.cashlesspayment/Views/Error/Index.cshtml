@@ -1,0 +1,30 @@
+﻿@{
+    var Errorlogs = ViewBag.List as List<Errorlog>;
+}
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Logboek</h3>
+
+<table>
+    <tr>
+        <td style="width:100px;"><b>Organisatie</b></td>
+        <td style="width:100px;"><b>Kassa</b></td>
+        <td style="width:100px;"><b>Timestamp</b></td>
+        <td style="width:100px;"><b>Bericht</b></td>
+        <td style="width:100px;"><b>Stacktrace</b></td>
+
+
+    </tr>
+    @foreach (Errorlog err in Errorlogs)
+    {
+        <tr>
+            <td>@err.Organisatie.OrganisationName</td>
+            <td>@err.RegisterID.RegisterName</td>
+            <td>@err.TimeStamp</td>
+            <td>@err.Message</td>
+            <td>@err.Stacktrace</td>
+        </tr>
+    }
+</table>

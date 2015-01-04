@@ -1,0 +1,29 @@
+﻿@model nmct.ssa.cashlesspayment.PresentationModel.PMOrgReg
+@{
+    ViewBag.Title = "AddKassa";
+}
+
+<h2>Voeg een kassa toe aan de organisatie</h2>
+@Html.HiddenFor(a => a.OrganisationID.ID)
+<h2 style="color:red;">@ViewBag.Error</h2>
+<br />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    @Html.LabelFor(a => a.RegisterID)    <br />
+    @Html.DropDownListFor(a => a.RegisterID.ID, Model.Registers)
+    @Html.ValidationMessageFor(a => a.RegisterID, "", new { @class = "text-danger" })   <br />
+
+    @Html.LabelFor(model => model.FromDate)    <br />
+    @Html.EditorFor(model => model.FromDate)    <br />
+    @Html.ValidationMessageFor(model => model.FromDate, "", new { @class = "text-danger" })    <br />
+
+    @Html.LabelFor(model => model.UntilDate)    <br />
+    @Html.EditorFor(model => model.UntilDate)    <br />
+    @Html.ValidationMessageFor(model => model.UntilDate, "", new { @class = "text-danger" })    <br />
+
+    <br />
+    <input type="submit" value="Opslaan" class="btn btn-default" />
+}

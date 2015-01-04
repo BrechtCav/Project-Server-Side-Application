@@ -28,6 +28,9 @@ namespace nmct.ssa.cashlesspayment.Controllers
             Organisatie org = new Organisatie();
             org = OrganisatieDA.GetOrganisationByid(Id.Value);
             ViewBag.orgreg = KassaDA.GetRegistersbyOrg();
+            List<Errorlog> errorlist = new List<Errorlog>();
+            errorlist = OrganisatieDA.GetLogsByOrg(Id.Value);
+            ViewBag.Logs = errorlist;
             if(org != null)
             {
                 return View(org);
@@ -188,7 +191,34 @@ namespace nmct.ssa.cashlesspayment.Controllers
                 return View(neworg);
             }
             return RedirectToAction("Index");
-            
+
+        }
+        [HttpGet]
+        public ActionResult AddKassa(int? Id)
+        {
+            if(Id == null)
+            {
+                return RedirectToAction("Index");
+            }
+            Organisatie org = new Organisatie();
+            org = OrganisatieDA.GetOrganisationByid(Id.Value);
+            PMOrgReg orgreg = new PMOrgReg();
+            orgreg.org = org;
+            orgreg.Registers = new MultiSelectList(KassaDA.GetRegisters(), "ID", "RegisterName", "Device");
+            return View(orgreg);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddKassa(Organisatie orgID, Kassa registerID, DateTime FromDate, DateTime UntilDate)
+        {
+            Organisate_Kassa reg = new Organisate_Kassa();
+            reg.OrganisationID = OrganisatieDA.GetOrganisationByid(orgID.ID);
+            reg.RegisterID = KassaDA.GetKassaByID(registerID.ID);
+            reg.FromDate = FromDate;
+            reg.UntilDate = UntilDate;
+            KassaDA.AddRegisterToTable(reg);
+            KassaDA.AddRegisterToDatabase(reg);
+            return RedirectToAction("Index");
         }
     }
 }

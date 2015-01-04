@@ -3,6 +3,9 @@
     var OrganisatieKassa = ViewBag.orgreg as List<Organisate_Kassa>;
 }
 @{
+    var Errorlogs = ViewBag.Logs as List<Errorlog>;
+}
+@{
     ViewBag.Title = "Details";
 }
 
@@ -45,7 +48,7 @@
     </tr>
 </table>
 
-<h3>Kassa's<a href="/Kassa/AddKassa"><img src="~/Images/Add.png" alt="Voeg nieuwe kassa toe" height="30" /></a></h3>
+<h3>Kassa's<a href="/Organisatie/AddKassa?Id=@Model.ID"><img src="~/Images/Add.png" alt="Voeg nieuwe kassa toe" height="30" /></a></h3>
 
 <table>
     <tr>
@@ -64,6 +67,26 @@
                 <td>@reg.UntilDate</td>
             </tr>
         }
+    }
+</table>
+<h3>Logboek</h3>
+
+<table>
+    <tr>
+        <td width="150"><b>Kassa</b></td>
+        <td width="150"><b>Timestamp</b></td>
+        <td width="200"><b>Bericht</b></td>
+        <td width="300"><b>Stacktrace</b></td>
+
+    </tr>
+    @foreach (Errorlog err in Errorlogs)
+    {
+            <tr>
+                <td>@err.RegisterID.RegisterName</td>
+                <td>@err.TimeStamp</td>
+                <td>@err.Message</td>
+                <td>@err.Stacktrace</td>
+            </tr>
     }
 </table>
 
