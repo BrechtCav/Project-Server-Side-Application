@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Change";
 }
+<h2 style="color:red;">@ViewBag.Error</h2>
 <h2>Organisatie</h2>
 <h3>Wijzig Organisatie.</h3>
 <br />
@@ -16,23 +17,23 @@
 
     @Html.LabelFor(model => model.Password)    <br />
     @Html.EditorFor(model => model.Password)    <br />
-    @Html.ValidationMessageFor(model => model.Password)    <br />
+    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })    <br />
     
     @Html.LabelFor(model => model.OrganisationName)    <br />
     @Html.EditorFor(model => model.OrganisationName)    <br />
-    @Html.ValidationMessageFor(model => model.OrganisationName)    <br />
+    @Html.ValidationMessageFor(model => model.OrganisationName, "", new { @class = "text-danger" })    <br />
 
     @Html.LabelFor(model => model.Address)    <br />
     @Html.EditorFor(model => model.Address)    <br />
-    @Html.ValidationMessageFor(model => model.Address)    <br />
+    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })    <br />
 
     @Html.LabelFor(model => model.Email)    <br />
     @Html.EditorFor(model => model.Email)    <br />
-    @Html.ValidationMessageFor(model => model.Email)    <br />
+    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })    <br />
 
     @Html.LabelFor(model => model.Phone)    <br />
     @Html.EditorFor(model => model.Phone)    <br />
-    @Html.ValidationMessageFor(model => model.Phone)    <br />
+    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })    <br />
     <br />
     <input type="submit" value="Opslaan" class="btn btn-default" />
 }

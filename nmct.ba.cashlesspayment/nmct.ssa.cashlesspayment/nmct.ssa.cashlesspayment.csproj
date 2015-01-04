@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KassaController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrganisatieController.cs" />
     <Compile Include="Global.asax.cs">
@@ -179,7 +180,11 @@
     <Compile Include="Migrations\RoleManager.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Kassa.cs" />
+    <Compile Include="Models\KassaDA.cs" />
+    <Compile Include="Models\KassaLists.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Organisate-Kassa.cs" />
     <Compile Include="Models\Organisatie.cs" />
     <Compile Include="Models\OrganisatieDA.cs" />
     <Compile Include="PresentationModel\PMChangedOrganisation.cs" />
@@ -233,8 +238,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -244,7 +247,6 @@
     <Content Include="Views\Account\ForgotPassword.cshtml" />
     <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Account\SendCode.cshtml" />
@@ -262,9 +264,14 @@
     <Content Include="Views\Organisatie\Details.cshtml" />
     <Content Include="Views\Organisatie\ErrorNoOrganisation.cshtml" />
     <Content Include="Views\Organisatie\Change.cshtml" />
+    <Content Include="Views\Kassa\Index.cshtml" />
+    <Content Include="Views\Kassa\Details.cshtml" />
+    <Content Include="Views\Kassa\NewKassa.cshtml" />
+    <Content Include="Views\Shared\DateTime.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Register\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

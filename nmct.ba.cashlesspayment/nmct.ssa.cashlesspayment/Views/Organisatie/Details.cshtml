@@ -1,5 +1,7 @@
 ﻿@model nmct.ssa.cashlesspayment.Models.Organisatie
-
+@{
+    var OrganisatieKassa = ViewBag.orgreg as List<Organisate_Kassa>;
+}
 @{
     ViewBag.Title = "Details";
 }
@@ -42,4 +44,27 @@
         <td>@Html.DisplayFor(model => model.DbPassword)</td>
     </tr>
 </table>
+
+<h3>Kassa's<a href="/Kassa/AddKassa"><img src="~/Images/Add.png" alt="Voeg nieuwe kassa toe" height="30" /></a></h3>
+
+<table>
+    <tr>
+        <td width="150"><b>Kassa</b></td>
+        <td width="150"><b>Begindatum</b></td>
+        <td width="150"><b>Einddatum</b></td>
+
+    </tr>
+    @foreach (Organisate_Kassa reg in OrganisatieKassa)
+    {
+        if (@reg.OrganisationID.OrganisationName.Equals(@Model.OrganisationName))
+        {
+            <tr>
+                <td>@reg.RegisterID.RegisterName</td>
+                <td>@reg.FromDate</td>
+                <td>@reg.UntilDate</td>
+            </tr>
+        }
+    }
+</table>
+
 <a href="~/Organisatie/Index">Terug naar overzicht</a>

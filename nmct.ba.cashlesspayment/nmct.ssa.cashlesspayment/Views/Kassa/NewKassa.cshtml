@@ -1,0 +1,37 @@
+﻿@model nmct.ssa.cashlesspayment.Models.Kassa
+
+@{
+    ViewBag.Title = "NewOrganisation";
+}
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+</script>
+<h2 style="color:red;">@ViewBag.Error</h2>
+<h2>Kassa</h2>
+<h3>Voeg hier een nieuwe kassa toe.</h3>
+<br />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.LabelFor(model => model.RegisterName)    <br />
+    @Html.EditorFor(model => model.RegisterName)    <br />
+    @Html.ValidationMessageFor(model => model.RegisterName, "", new { @class = "text-danger" })   <br />
+
+    @Html.LabelFor(model => model.Device)    <br />
+    @Html.EditorFor(model => model.Device)    <br />
+    @Html.ValidationMessageFor(model => model.Device, "", new { @class = "text-danger" }) <br />
+    
+    @Html.LabelFor(model => model.PurchaseDate)    <br />
+    @Html.EditorFor(model => model.PurchaseDate)    <br />
+    @Html.ValidationMessageFor(model => model.PurchaseDate)    <br />
+
+    @Html.LabelFor(model => model.ExpiresDate)    <br />
+    @Html.EditorFor(model => model.ExpiresDate)    <br />
+    @Html.ValidationMessageFor(model => model.ExpiresDate)    <br />
+
+    <br />
+    <input type="submit" value="Opslaan" class="btn btn-default" />
+}

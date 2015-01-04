@@ -1,0 +1,28 @@
+﻿@model nmct.ssa.cashlesspayment.Models.Kassa
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<h3>@Model.RegisterName<a href="/Kassa/Change?id=@Model.ID"><img src="~/Images/Edit.png" alt="Wijzig kassa" style="margin:5px; height:20px;" /></a></h3>
+<br />
+<table>
+    <tr>
+        <td width="200px"><b>@Html.LabelFor(model => model.RegisterName)</b></td>
+        <td width="400px">@Html.DisplayFor(model => model.RegisterName)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.Device)</b></td>
+        <td>@Html.DisplayFor(model => model.Device)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.PurchaseDate)</b></td>
+        <td>@Html.DisplayFor(model => model.PurchaseDate)</td>
+    </tr>
+    <tr>
+        <td><b>@Html.LabelFor(model => model.ExpiresDate)</b></td>
+        <td>@Html.DisplayFor(model => model.ExpiresDate)</td>
+    </tr>
+</table>
+<a href="~/Kassa/Index">Terug naar overzicht</a>

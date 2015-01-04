@@ -1,0 +1,12 @@
+﻿@model IEnumerable<nmct.ssa.cashlesspayment.Models.Kassa>
+
+<h1>Kassa's &emsp;  <a href="/Kassa/NewKassa"><img src="~/Images/Add.png" alt="Voeg nieuwe kassa toe" height="30" /> </a> </h1>
+<div style="margin-top:30px;">
+    <ul>
+        
+        @foreach (Kassa reg in Model)
+        {
+           <li style="height:30px;">@Html.ActionLink(reg.RegisterName, "Details", new { Id = reg.ID })<a href="~/Kassa/Change?id=@reg.ID"><img src="~/Images/Edit.png" alt="Wijzig kassa" style="margin:5px; height:20px;" /></a></li>
+        }
+    </ul>
+</div>
